@@ -1,38 +1,252 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  /* background-color: #ebedec; */
+  background-color:gray;
+}
+
+button {
+  padding: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+h3, h4 {
+  margin-bottom: 0;
+}
+
+.logo {
+  width: 100px;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.pythonlogo {
+  width: 36px;
+  height: 100%;
+  margin: 0 10px 0 5px;
+}
+
+
+#page-body {
+  /* max-width: 700px; */
+  margin: auto;
+  padding-top: 90px;
+  padding-right: 20px; 
+  padding-left: 20px;
+}
+
+#page-body h1 {
+  color: #FFEA00;
+  /* color:#FFFF8F; */
+  text-shadow: black 2px 2px 3px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+.flex-container h3 {
+  display: block;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: white;
+  text-shadow: black 1px 1px 5px;  
+  background-color:gray;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.flex-item {
+  width: 364px;
+  margin: 10px;
+}
+
+.flex-item a {
+  display: flex;
+  line-height: 2em;
+  background-color: lightblue;
+  border: 2px solid blue;
+  border-radius: 10px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.flex-item-large {
+  width: 546px;
+  margin: 10px;
+}
+
+.flex-item-large a {
+  display: flex;
+  line-height: 2em;
+  background-color: lightblue;
+  border: 2px solid blue;
+  border-radius: 10px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+#advt {
+  background-color: white;
+  /* border: none; */
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  border-left: 2px solid black;
+}
+
+.flex-video {
+  width: 550px;
+  margin: 10px;  
+}
+
+.flex-photo {
+  width: 100%;
+}
+
+.youtube-logo {
+  width: 96px;
+}
+
+.instructor-img {
+  width: 70%;
+  height: auto;
+}
+
+.languageicon {
+  width: 64px;
+  margin: 10px;
+}
+
+.attributions {
+  display: flex;
+}
+.attributions a {
+  font-size: 0.5em;
+  line-height: 0.8em;
+  background-color: inherit;
+  border: none;
+  border-radius: 0px;
+  padding: 5px;
+  text-decoration: none;  
+}
+
+article {
+  background-color: white;
+  margin: 10px;
+  padding: 2px 15px;
+  border-radius: 10px;
+}
+
+article h2 {
+  margin-bottom: -5px;
+}
+
+.articledate {
+  display: block;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  font-size: .8em;
+  border-bottom: 3px solid gray;
+}
+
+article p {
+  margin: 0.5em;
+}
+
+.article-list-item {
+  text-decoration: none;
+  color: black;
+  padding: 16px 0 0 0;
+}
+
+.article-list-item p {
+  padding-bottom: 32px;
+  border-bottom: 2px solid black;
+}
+
+#add-comment-form {
+  border-bottom: 2px solid black;
+  padding: 16px;
+}
+
+#add-comment-form h3 {
+  margin-bottom: 16px;
+}
+
+#add-comment-form input, textarea {
+  display: block;
+  width: 300px;
+  padding: 8px;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  border: 2px solid black;
+  margin-bottom: 16px;
+}
+
+#add-comment-form button {
+  width: 320px;
+}
+
+#upvotes-section button, p {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.comment {
+  border-bottom: 2px solid black;
+  padding: 16px;
+}
+
+table {
+  font-size: 0.9em;
+}
+
+input {
+  padding: 5px;
+  font-size: 1.25em;
+}
+
+select {
+  padding: 5px;
+  font-size: 1.25em;
+}
+
+label {
+  font-weight: bold;
+}
+
+.sublabel {
+  font-weight: normal;
+  font-size: 0.9em;
+}
+.command {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.submit {
+  background-color: blue;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-transform: capitalize;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }

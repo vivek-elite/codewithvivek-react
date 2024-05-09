@@ -1,0 +1,42 @@
+.episode-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+  
+  
+.episode-container h4 {
+    display: block;
+    margin-bottom: 0px;
+    text-shadow: black 1px 1px 5px;  
+}
+ 
+.episode-detail {
+    width: 364px;
+    margin: 10px 50px;
+}
+
+.episode-detail a {
+    /* display: block; */
+    display: flex;
+    line-height: 2em;
+    background-color: lightblue;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.duration {
+    margin: 0px;
+    font-size: 0.9em;
+}
+  
+.description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+}

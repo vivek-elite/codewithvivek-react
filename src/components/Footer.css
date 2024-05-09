@@ -1,0 +1,77 @@
+footer {
+    font-size: 0.9em;
+    font-weight: 500;
+    /* font-weight: bold; */
+    margin-top: 20px;
+    padding: 0 10px 10px 10px;
+    background-color: lightgray;
+}
+
+footer h2 {
+    color:#FFEA00;
+    font-size: 1.3em;
+    text-shadow: black 2px 1px 3px;
+}
+
+footer a {
+    display: block;
+    padding: 10px 0 10px 10px;
+    color: black;
+    text-shadow: gray 4px 2px 5px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    background: gray;
+    color: #FFEA00;
+    text-shadow: black 5px 2px 5px;  
+    cursor: pointer;
+}
+
+footer ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    flex-basis: 50%;
+    justify-self:self-start;
+}
+
+footer p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#footer-info {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-block {
+    /* flex-basis: 100%; */
+    margin-bottom: 10px;
+}
+
+#copyright {
+    margin-bottom: 0px;
+    /* background-image: url('copy-bg1.png');
+    background-position: center;
+    background-repeat: no-repeat; */
+}  
+
+#copyright a {
+    display: inline;
+    color: cadetblue;
+    font-weight: 700;
+    text-shadow: black 2px 1px 3px; 
+}
+
+#copyright a:hover {
+    color: cadetblue;
+    font-weight: 700;
+    text-shadow: gray 2px 1px 3px;     
+    background-color: lightgray;
+}

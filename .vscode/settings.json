@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/ab6a29a9-6841-4035-83fc-05417a0a45c7/resourceGroups/codewithvivek_group/providers/Microsoft.Web/sites/codewithvivek",
+    "appService.deploySubpath": "."
+}
